@@ -28,7 +28,7 @@ import { menu, socialNetworks } from './lib';
         </div>
         <div class="footer__bottom">
           <p class="footer__copy">
-            © 2023 EATLY All Rights Reserved.
+            © 2024 EATLY All Rights Reserved.
           </p>
           <ul class="footer__list">
             <li
