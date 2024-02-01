@@ -2,7 +2,6 @@
 defineProps({
   title: String,
   href: String,
-  // icon: '/_nuxt/assets/images/Social/insta.svg',
   icon: String,
 });
 </script>

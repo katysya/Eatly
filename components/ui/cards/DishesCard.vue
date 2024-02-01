@@ -1,7 +1,7 @@
 <script setup>
 import InfoCard from './elementsCard/InfoCard.vue';
 import PriceCard from './elementsCard/PriceCard.vue';
-import HeartIcon from '../icons/HeartIcon.vue';
+import Favorite from './elementsCard/Favorite.vue';
 
 defineProps({
   element: Object,
@@ -10,22 +10,21 @@ defineProps({
 
 <template>
   <div class="card-product">
+    <div class="card-product__heart">
+      <favorite />
+    </div>
     <div class="card-product__img">
       <img :src="element.img" alt="" />
-      <label class="container">
-        <input type="checkbox" />
-        <div class="checkmark">
-          <heart-icon />
-        </div>
-      </label>
     </div>
-    <div class="card__bottom">
-      <info-card
-        :category="element.category"
-        :title="element.title"
-        :time="element.time"
-        :rating="element.rating"
-      />
+    <div class="card-product__bottom">
+      <div class="card-product__info">
+        <info-card
+          :category="element.category"
+          :title="element.title"
+          :time="element.time"
+          :rating="element.rating"
+        />
+      </div>
       <price-card :price="element.price" :count="element.count" />
     </div>
   </div>
@@ -41,7 +40,7 @@ defineProps({
   height: 100%;
 
   &__img {
-    height: 208px;
+    height: 184px;
     width: inherit;
 
     img {
@@ -50,69 +49,15 @@ defineProps({
       object-fit: cover;
     }
   }
-}
 
-.container {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  font-size: 20px;
-  user-select: none;
-  transition: 100ms;
-
-  input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-
-    &:checked ~ .checkmark {
-      color: red;
-      animation: like_effect 400ms ease;
-
-      path {
-        stroke: red;
-      }
-    }
-  }
-}
-
-.checkmark {
-  top: 0;
-  left: 0;
-  height: 2em;
-  width: 2em;
-  transition: 100ms;
-  animation: dislike_effect 400ms ease;
-  color: transparent;
-}
-
-@keyframes like_effect {
-  0% {
-    transform: scale(0);
+  &__info {
+    margin-bottom: 12px;
   }
 
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes dislike_effect {
-  0% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
+  &__heart {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
   }
 }
 </style>

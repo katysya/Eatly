@@ -2,6 +2,8 @@
 import SubtitleMini from '../../ui/SubtitleMini.vue';
 import RestaurantCard from '~/components/ui/cards/RestaurantCard.vue';
 import ViewAllLink from '~/components/ui/ViewAllLink.vue';
+import ViewAllLinkWrapper from '~/components/ui/wrappers/ViewAllLinkWrapper.vue';
+
 import { card } from './lib';
 </script>
 
@@ -19,9 +21,9 @@ import { card } from './lib';
             <restaurant-card :element="item" />
           </li>
         </div>
-        <div class="restaraunts__link">
+        <view-all-link-wrapper>
           <view-all-link />
-        </div>
+        </view-all-link-wrapper>
       </div>
     </div>
   </section>
@@ -45,11 +47,6 @@ import { card } from './lib';
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
-  }
-
-  &__link {
-    display: flex;
-    justify-content: flex-end;
   }
 }
 </style>

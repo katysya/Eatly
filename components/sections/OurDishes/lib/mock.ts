@@ -9,7 +9,7 @@ export const card = reactive([
     title: 'Chicken Hell',
     time: '24min',
     rating: 4.8,
-    price: 12.99,
+    price: 12,
     count: 0,
   },
   {
@@ -22,7 +22,7 @@ export const card = reactive([
     title: 'Swe Dish',
     time: '24min',
     rating: 4.9,
-    price: 12.99,
+    price: 12,
     count: 0,
   },
   {
@@ -35,7 +35,7 @@ export const card = reactive([
     title: 'Chicken Hell',
     time: '24min',
     rating: 4.8,
-    price: 12.99,
+    price: 12,
     count: 0,
   },
   {
@@ -48,7 +48,7 @@ export const card = reactive([
     title: 'Swe Dish',
     time: '24min',
     rating: 4.8,
-    price: 12.99,
+    price: 12,
     count: 0,
   },
   {
@@ -61,7 +61,7 @@ export const card = reactive([
     title: 'Chicken Hell',
     time: '24min',
     rating: 4.8,
-    price: 12.99,
+    price: 12,
     count: 0,
   },
 ]);
