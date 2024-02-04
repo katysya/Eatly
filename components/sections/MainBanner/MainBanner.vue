@@ -1,69 +1,17 @@
 <script setup>
-// import Title from '~/components/ui/text/Title.vue';
+import Title from '~/components/ui/text/Title.vue';
 import MainButton from '../../ui/MainButton.vue';
 import AdditionalButton from '~/components/ui/buttons/AdditionalButton.vue';
 import TrustpilotIcon from '~/components/ui/icons/TrustpilotIcon.vue';
 import StarsIcon from '~/components/ui/icons/StarsIcon.vue';
 import NotificationProductCard from '~/components/ui/cards/NotificationProductCard.vue';
+import ChartCard from '~/components/ui/cards/ChartCard.vue';
 
 const notification = {
   title: 'Chicken Hell',
   status: 'On The Way',
   img: '/_nuxt/assets/images/Main-Banner/notification.webp',
   time: '3:09',
-};
-
-import {
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-} from 'chart.js';
-import { Line } from 'vue-chartjs';
-
-// Register
-ChartJS.register(
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
-const data = {
-  labels: [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-  ],
-  datasets: [
-    {
-      label: '',
-      backgroundColor: 'yellow',
-      borderColor: '#6C5FBC',
-      borderJoinStyle: 'bevel',
-      data: [40, 39, 10, 40, 39, 80, 40],
-    },
-  ],
-};
-
-const options = {
-  responsive: true,
-  maintainAspectRatio: false,
 };
 </script>
 
@@ -74,7 +22,7 @@ const options = {
         <div class="main-banner__info">
           <p class="main-banner__users">OVER 1000 USERS</p>
           <div class="main-banner__title">
-            <!-- <Title title="Enjoy Foods All Over The" word="World" /> -->
+            <Title title="Enjoy Foods All Over The" word="World" />
           </div>
           <p class="main-banner__description">
             EatLy help you set saving goals, earn cash back offers, Go
@@ -111,8 +59,10 @@ const options = {
               :time="notification.time"
             />
           </div>
-          <div>
-            <Line :data="data" :options="options" />
+          <div class="main-banner__chart">
+            <div class="main-banner__chart--wrapper">
+              <ChartCard />
+            </div>
           </div>
           <div class="main-banner__images">
             <img
@@ -219,23 +169,52 @@ const options = {
     align-items: center;
   }
 
+  &__chart {
+    position: absolute;
+    background-color: $white;
+    bottom: 100px;
+    left: -120px;
+    z-index: 5;
+    border-radius: 15px;
+    padding: 10px;
+    border: 0.2px solid $whiteSecondary;
+    box-shadow: $shadowSecondary;
+
+    &--wrapper {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -35px;
+        left: -35px;
+        background: url('~/assets/images/Main-Banner/chart.svg')
+          no-repeat;
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+
   &__notification {
     position: absolute;
     z-index: 5;
-    top: 0;
+    top: -20px;
     right: 0;
   }
 
   &__pictures {
     position: relative;
     width: 50%;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   &__images {
-    width: 100%;
+    width: auto;
+    height: 100%;
     position: relative;
 
     &::after {
@@ -251,8 +230,8 @@ const options = {
   }
 
   &__img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
   }
 }
 </style>
