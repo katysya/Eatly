@@ -1,7 +1,7 @@
 <script setup>
 import { info } from './lib';
 import Subtitle from '../../ui/Subtitle.vue';
-import MainButton from '../../ui/MainButton.vue';
+import MainButton from '../../ui/buttons/MainButton.vue';
 </script>
 
 <template>
@@ -18,7 +18,7 @@ import MainButton from '../../ui/MainButton.vue';
           </div>
         </div>
         <div class="premium__info">
-          <Subtitle
+          <subtitle
             name="Premium"
             word="Quality"
             additional="For Your Health"
@@ -32,7 +32,7 @@ import MainButton from '../../ui/MainButton.vue';
               {{ item.text }}
             </li>
           </ul>
-          <MainButton
+          <main-button
             class="premium__button"
             title="Download"
             href="/"

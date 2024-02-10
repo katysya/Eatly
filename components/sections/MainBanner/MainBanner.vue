@@ -1,6 +1,6 @@
 <script setup>
 import Title from '~/components/ui/text/Title.vue';
-import MainButton from '../../ui/MainButton.vue';
+import MainButton from '../../ui/buttons/MainButton.vue';
 import AdditionalButton from '~/components/ui/buttons/AdditionalButton.vue';
 import TrustpilotIcon from '~/components/ui/icons/TrustpilotIcon.vue';
 import StarsIcon from '~/components/ui/icons/StarsIcon.vue';
@@ -33,12 +33,12 @@ const notification = {
             >
           </p>
           <div class="main-banner__action">
-            <MainButton
+            <main-button
               title="Get Started"
               href="/sign in"
               icon="/_nuxt/assets/images/Header/signUp.svg"
             />
-            <AdditionalButton title="Go Pro" href="/sign in" />
+            <additional-button title="Go Pro" href="/sign in" />
           </div>
           <div class="main-banner__data">
             <a class="main-banner__trustpilot">
@@ -60,8 +60,11 @@ const notification = {
             />
           </div>
           <div class="main-banner__chart">
-            <div class="main-banner__chart--wrapper">
-              <ChartCard />
+            <div
+              class="main-banner__chart--wrapper"
+              style="width: 150px"
+            >
+              <chart-card />
             </div>
           </div>
           <div class="main-banner__images">
@@ -173,10 +176,10 @@ const notification = {
     position: absolute;
     background-color: $white;
     bottom: 100px;
-    left: -120px;
+    left: 50px;
     z-index: 5;
     border-radius: 15px;
-    padding: 10px;
+    padding: 10px 0;
     border: 0.2px solid $whiteSecondary;
     box-shadow: $shadowSecondary;
 
@@ -187,7 +190,7 @@ const notification = {
         content: '';
         position: absolute;
         bottom: -35px;
-        left: -35px;
+        left: -25px;
         background: url('~/assets/images/Main-Banner/chart.svg')
           no-repeat;
         width: 27px;

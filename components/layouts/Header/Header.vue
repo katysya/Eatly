@@ -1,7 +1,7 @@
 <script setup>
 import Logo from '../../ui/Logo.vue';
 import ItemMenu from '../../ui/ItemMenu.vue';
-import MainButton from '../../ui/MainButton.vue';
+import MainButton from '../../ui/buttons/MainButton.vue';
 import SimpleButton from '../../ui/SimpleButton.vue';
 import { menu } from './lib';
 
@@ -21,11 +21,11 @@ const clickActiveItemMenu = (id) => {
     <div class="container">
       <div class="header__content">
         <div class="header__menu">
-          <Logo />
+          <logo />
           <nav>
             <ul class="header__navigation">
               <li v-for="element in menu" :key="element.id">
-                <ItemMenu
+                <item-menu
                   :id="element.id"
                   :title="element.title"
                   :active="element.active"
@@ -37,8 +37,8 @@ const clickActiveItemMenu = (id) => {
           </nav>
         </div>
         <div class="header__entry">
-          <SimpleButton title="Login" href="/login" />
-          <MainButton
+          <simple-button title="Login" href="/login" />
+          <main-button
             title="Sign Up"
             href="/sign in"
             icon="/_nuxt/assets/images/Header/signUp.svg"

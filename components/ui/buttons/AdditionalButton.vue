@@ -6,9 +6,9 @@ defineProps({
 </script>
 
 <template>
-  <a class="button" :href="{ href }">
+  <NuxtLink class="button" :to="{ href }">
     {{ title }}
-  </a>
+  </NuxtLink>
 </template>
 
 <style lang="scss" scoped>
