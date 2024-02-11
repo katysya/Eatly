@@ -132,25 +132,27 @@ const changeChart = (id) => {
         @click="changeChart(elem.id)"
       />
     </div>
-    <div class="chart__line"></div>
-    <div class="chart__block">
+    <div class="chart__graph">
       <chart-loader v-if="!chartLoaded" />
-      <Transition>
-        <Line
-          v-if="activeChart === 1"
-          :data="data"
-          :options="options"
-          class="chart__element"
-        />
-      </Transition>
-      <Transition>
-        <Bar
-          v-if="activeChart === 2"
-          :data="data"
-          :options="options"
-          class="chart__element"
-        />
-      </Transition>
+      <div v-else class="chart__block">
+        <div class="chart__line"></div>
+        <Transition>
+          <Line
+            v-if="activeChart === 1"
+            :data="data"
+            :options="options"
+            class="chart__element"
+          />
+        </Transition>
+        <Transition>
+          <Bar
+            v-if="activeChart === 2"
+            :data="data"
+            :options="options"
+            class="chart__element"
+          />
+        </Transition>
+      </div>
     </div>
   </div>
 </template>
@@ -174,7 +176,7 @@ const changeChart = (id) => {
     height: 1px;
     background-color: $primary;
     opacity: 0.1;
-    top: 60%;
+    top: 30%;
 
     &::after,
     &::before {
@@ -201,13 +203,17 @@ const changeChart = (id) => {
     margin-bottom: 30px;
   }
 
-  &__block {
-    position: relative;
+  &__graph {
     min-height: 80px;
-    padding: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__block {
+    position: relative;
+    width: 100%;
+    height: 80px;
   }
 
   &__element {
