@@ -3,12 +3,13 @@ defineProps({
   title: String,
   href: String,
   icon: String,
+  light: Boolean,
 });
 </script>
 
 <template>
   <NuxtLink class="button" :to="{ href }">
-    <div class="button__title">
+    <div class="button__title" :class="{ light: light }">
       {{ title }}
       <p class="button__text">{{ title }}</p>
     </div>
@@ -31,6 +32,12 @@ defineProps({
   text-transform: capitalize;
   width: fit-content;
   cursor: pointer;
+
+  .light {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: calc(10px + 5 * $size);
+  }
 
   &__title {
     color: transparent;
