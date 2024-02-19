@@ -9,7 +9,7 @@ defineProps({
 <template>
   <div class="title">
     <h2 class="title__name">
-      {{ name }}<span class="title__word">{{ word }}</span>
+      {{ name }} <span class="title__word">{{ word }}</span>
     </h2>
     <p class="title__additional">{{ additional }}</p>
   </div>

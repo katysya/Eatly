@@ -219,7 +219,8 @@ const changeChart = (id) => {
   &__element {
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0;
+    padding-left: 10px;
   }
 }
 </style>
