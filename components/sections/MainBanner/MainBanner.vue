@@ -9,7 +9,10 @@ import ChartCard from '~/components/ui/cards/ChartCard.vue';
 
 const notification = {
   title: 'Chicken Hell',
-  status: 'On The Way',
+  status: {
+    id: 1,
+    name: 'On The Way',
+  },
   img: '/_nuxt/assets/images/Main-Banner/notification.webp',
   time: '3:09',
 };
@@ -37,6 +40,7 @@ const notification = {
               title="Get Started"
               href="/sign in"
               icon="/_nuxt/assets/images/Header/signUp.svg"
+              light="false"
             />
             <additional-button title="Go Pro" href="/sign in" />
           </div>
@@ -52,12 +56,14 @@ const notification = {
         </div>
         <div class="main-banner__pictures">
           <div class="main-banner__notification">
-            <notification-product-card
-              :title="notification.title"
-              :status="notification.status"
-              :img="notification.img"
-              :time="notification.time"
-            />
+            <div class="main-banner__card">
+              <notification-product-card
+                :title="notification.title"
+                :status="notification.status"
+                :img="notification.img"
+                :time="notification.time"
+              />
+            </div>
           </div>
           <div class="main-banner__chart">
             <div
@@ -204,6 +210,22 @@ const notification = {
     z-index: 5;
     top: -20px;
     right: 0;
+  }
+
+  &__card {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 42px;
+      height: 28px;
+      top: -20px;
+      right: -45px;
+      background: url('~/assets/images/Main-Banner/notification.svg')
+        no-repeat;
+      background-size: cover;
+    }
   }
 
   &__pictures {

@@ -1,0 +1,53 @@
+[33mcommit f5cb99f2870f5401aea93077fca4d98007ef91ce[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Mon Feb 19 22:36:07 2024 +0300
+
+    Changed chart padding and Create Section CustomerSay
+
+[33mcommit 2f86c35d57e027391ae6d48f7d8f5c22a6f776ba[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Fri Feb 16 23:25:00 2024 +0300
+
+    create section discount
+
+[33mcommit ac55b0ea993c778c96e916b3f9d4d5ad440aa473[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Sun Feb 11 14:37:34 2024 +0300
+
+    Change chart and line for graph
+
+[33mcommit 6726e59d432e70624679678170836858951ae357[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Sun Feb 11 02:21:43 2024 +0300
+
+    Add Bar Chart and loader for chart vue js
+
+[33mcommit f222f867299fdd2302df5cb1dafcbd5413629e00[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Sun Feb 4 16:23:15 2024 +0300
+
+    Add chart card
+
+[33mcommit db3f73cae24407cbea5c69332ece56f120f61ef2[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Fri Feb 2 00:12:13 2024 +0300
+
+    Create notification for Main Banner
+
+[33mcommit c5ab2bcb0a7716ba3aa50ff4ecb49803715f0efe[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Thu Jan 25 00:36:07 2024 +0300
+
+    Add favorites in card dishes
+
+[33mcommit f4cad207608221ddb0f8d73e0a38ed85911f06ec[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Sun Jan 21 19:09:20 2024 +0300
+
+    Create card for restaraunt
+
+[33mcommit ecbc398bf7be217525439cc371e04963cfeb00fc[m
+Author: katyusya <katusha.fedyakena@mail.ru>
+Date:   Thu Jan 11 00:19:09 2024 +0300
+
+    Create project

@@ -9,25 +9,27 @@ import { card } from './lib';
 </script>
 
 <template>
-  <div class="container">
-    <base-section>
-      <div class="dishes">
-        <subtitle-mini title="Our Top" word="Dishes" />
-        <ul class="dishes__list">
-          <li
-            class="dishes__item"
-            v-for="item in card"
-            :key="item.id"
-          >
-            <dishes-card :element="item" />
-          </li>
-        </ul>
-        <view-all-link-wrapper>
-          <view-all-link />
-        </view-all-link-wrapper>
-      </div>
-    </base-section>
-  </div>
+  <section class="dishes">
+    <div class="container">
+      <base-section>
+        <div class="dishes__content">
+          <subtitle-mini title="Our Top" word="Dishes" />
+          <ul class="dishes__list">
+            <li
+              class="dishes__item"
+              v-for="item in card"
+              :key="item.id"
+            >
+              <dishes-card :element="item" />
+            </li>
+          </ul>
+          <view-all-link-wrapper>
+            <view-all-link />
+          </view-all-link-wrapper>
+        </div>
+      </base-section>
+    </div>
+  </section>
 </template>
 
 <style lang="scss">

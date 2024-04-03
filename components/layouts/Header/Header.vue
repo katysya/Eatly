@@ -42,6 +42,7 @@ const clickActiveItemMenu = (id) => {
             title="Sign Up"
             href="/sign in"
             icon="/_nuxt/assets/images/Header/signUp.svg"
+            light="false"
           />
         </div>
       </div>

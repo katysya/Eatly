@@ -1,19 +1,14 @@
-<script setup>
-import Subtitle from '~/components/ui/Subtitle.vue';
-</script>
+<script setup></script>
 
 <template>
-  <div class="customersay">
+  <section class="customersay">
     <div class="container">
-      Customersay
-      <div class="">
-        <subtitle
-          name="Control "
-          word="Purchases"
-          additional="Via Dashboard"
-        />
-      </div>
-      <div class="">Right</div>
+      <base-section> CustomerSay </base-section>
     </div>
-  </div>
+  </section>
 </template>
+
+<style lang="scss">
+.customersay {
+}
+</style>

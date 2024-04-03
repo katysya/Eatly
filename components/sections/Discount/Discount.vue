@@ -65,7 +65,7 @@ import MainButton from '~/components/ui/buttons/MainButton.vue';
     position: absolute;
     top: 50%;
     right: 10px;
-    transform: translateY(-60%);
+    transform: translateY(-50%);
   }
 
   &__image {

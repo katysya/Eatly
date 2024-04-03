@@ -3,6 +3,16 @@ const props = defineProps(['price', 'count']);
 
 let sumProduct = ref(props.price);
 let countProduct = ref(props.count);
+
+const addProductToCrat = () => {
+  countProduct.value++;
+  sumProduct.value += countProduct.value > 1 ? props.price : 0;
+};
+
+const deleteProductToCart = () => {
+  countProduct.value--;
+  sumProduct.value -= countProduct.value >= 1 ? props.price : 0;
+};
 </script>
 
 <template>
@@ -11,12 +21,7 @@ let countProduct = ref(props.count);
     <div class="price__action" :class="{ active: countProduct > 0 }">
       <button
         class="price__button price__button-dec"
-        @click="
-          () => {
-            countProduct--;
-            sumProduct -= price;
-          }
-        "
+        @click="deleteProductToCart"
         :disabled="countProduct == 0 ? true : false"
       >
         -
@@ -24,12 +29,7 @@ let countProduct = ref(props.count);
       <div class="price__count">{{ countProduct }}</div>
       <button
         class="price__button price__button-inc"
-        @click="
-          () => {
-            countProduct++;
-            sumProduct += price;
-          }
-        "
+        @click="addProductToCrat"
         :disabled="countProduct == 20 ? true : false"
       >
         +

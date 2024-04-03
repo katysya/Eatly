@@ -33,10 +33,11 @@ import MainButton from '../../ui/buttons/MainButton.vue';
             </li>
           </ul>
           <main-button
-            class="premium__button"
             title="Download"
             href="/"
             icon="/_nuxt/assets/images/Premium/download.svg"
+            light="false"
+            class="premium__button"
           />
         </div>
       </div>
