@@ -4,7 +4,7 @@ import { shuffle as _shuffle } from 'lodash-es';
 import BaseSection from '../BaseSection/BaseSection.vue';
 import Subtitle from '~/components/ui/Subtitle.vue';
 import NotificationProductCard from '~/components/ui/cards/NotificationProductCard.vue';
-import vSelect from '~/components/ui/Select.vue';
+import PurchasesCard from '~/components/ui/cards/PurchasesCard.vue';
 
 import { cards } from './lib';
 
@@ -50,11 +50,12 @@ function shuffle() {
             <div class="purchases__table">
               <div class="purchases__table-top">
                 <p class="purchases__title">Purchases</p>
-                <div class="purchases__select">
-                  <vSelect></vSelect>
-                </div>
+                <div class="purchases__select"></div>
               </div>
-              <div class="purchases__table-content">content</div>
+              <div class="purchases__table-content">
+                <purchases-card></purchases-card>
+                <purchases-card></purchases-card>
+              </div>
             </div>
           </div>
         </div>
@@ -83,6 +84,22 @@ function shuffle() {
 .purchases {
   &__content {
     display: flex;
+    gap: 141px;
+  }
+
+  &__orders {
+    width: 100%;
+  }
+
+  &__container {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: calc(16px + 12 * $size);
+    line-height: calc(22px + 16 * $size);
+    font-weight: 800;
+    letter-spacing: 0.3px;
   }
 
   &__cards {
@@ -104,9 +121,19 @@ function shuffle() {
     border: 1px solid $whiteSecondary;
     border-radius: 25px;
     background-color: $white;
+    padding: 45px 40px;
+    max-width: 534px;
+    width: 100%;
 
     &-top {
       display: flex;
+      margin-bottom: 22px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
     }
   }
 }

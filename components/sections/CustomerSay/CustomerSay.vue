@@ -7,8 +7,3 @@
     </div>
   </section>
 </template>
-
-<style lang="scss">
-.customersay {
-}
-</style>

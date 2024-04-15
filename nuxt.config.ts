@@ -1,8 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['nuxt-lodash'],
+  modules: ['nuxt-lodash', 'nuxt-primevue'],
+  primevue: {
+    components: {
+      include: '*',
+    },
+  },
   devtools: { enabled: true },
-  css: ['~/assets/styles/main.scss'],
+  css: [
+    '~/assets/styles/main.scss',
+    'primevue/resources/themes/aura-light-green/theme.css',
+  ],
   vite: {
     css: {
       preprocessorOptions: {
