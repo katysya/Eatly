@@ -1,1 +1,1 @@
-export { cards } from './mock';
+export { cards, info, time } from './mock';

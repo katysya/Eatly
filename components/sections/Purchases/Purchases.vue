@@ -6,9 +6,10 @@ import Subtitle from '~/components/ui/Subtitle.vue';
 import NotificationProductCard from '~/components/ui/cards/NotificationProductCard.vue';
 import PurchasesCard from '~/components/ui/cards/PurchasesCard.vue';
 
-import { cards } from './lib';
+import { cards, info, time } from './lib';
 
 const items = ref(cards);
+const selectedTime = ref();
 
 function shuffle() {
   items.value = _shuffle(items.value);
@@ -50,11 +51,26 @@ function shuffle() {
             <div class="purchases__table">
               <div class="purchases__table-top">
                 <p class="purchases__title">Purchases</p>
-                <div class="purchases__select"></div>
+                <div class="purchases__select-container">
+                  <Dropdown
+                    v-model="selectedTime"
+                    class="purchases__select"
+                    :options="time"
+                    optionLabel="name"
+                    placeholder="Select a Time"
+                  />
+                </div>
               </div>
               <div class="purchases__table-content">
-                <purchases-card></purchases-card>
-                <purchases-card></purchases-card>
+                <purchases-card
+                  v-for="item in info"
+                  :key="item.id"
+                  :id="item.id"
+                  :title="item.title"
+                  :description="item.description"
+                  :img="item.img"
+                  :data="item.data"
+                ></purchases-card>
               </div>
             </div>
           </div>
@@ -79,6 +95,15 @@ function shuffle() {
 
 .fade-leave-active {
   position: absolute;
+}
+
+.p-highlight {
+  color: $primary;
+  background: $primaryLight;
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+  outline: 1px solid $primary;
 }
 
 .purchases {
@@ -128,6 +153,7 @@ function shuffle() {
     &-top {
       display: flex;
       margin-bottom: 22px;
+      gap: 100px;
     }
 
     &-content {
@@ -135,6 +161,14 @@ function shuffle() {
       flex-direction: column;
       gap: 13px;
     }
+  }
+
+  &__select-container {
+    flex-grow: 1;
+  }
+
+  &__select {
+    width: 100%;
   }
 }
 </style>

@@ -19,6 +19,7 @@
   "dependencies": {
     "@aacassandra/vue3-progressbar": "^1.0.3",
     "chart.js": "^4.4.1",
+    "dateformat": "^5.0.3",
     "primevue": "^3.51.0",
     "sass": "^1.69.7",
     "vue-chartjs": "^5.3.0",

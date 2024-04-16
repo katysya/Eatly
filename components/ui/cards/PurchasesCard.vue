@@ -1,4 +1,12 @@
 <script setup>
+defineProps({
+  id: Number,
+  title: String,
+  description: String,
+  img: String,
+  data: [Object],
+});
+
 const value = ref(50);
 </script>
 
@@ -6,15 +14,11 @@ const value = ref(50);
   <div class="purchases-card">
     <div class="purchases-card__info">
       <div class="purchases-card__picture">
-        <img
-          class="purchases-card__img image"
-          src="~/assets/images/Main-Banner/food.webp"
-          alt=""
-        />
+        <img class="purchases-card__img image" :src="img" alt="" />
       </div>
       <div class="purchases-card__description">
-        <div class="purchases-card__name">Expense</div>
-        <div class="purchases-card__percent">Increased By 10%</div>
+        <div class="purchases-card__name">{{ title }}</div>
+        <div class="purchases-card__percent">{{ description }}</div>
       </div>
       <div class="purchases-card__money">$409.00</div>
     </div>
