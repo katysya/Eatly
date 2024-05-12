@@ -10,7 +10,7 @@ import Discount from '~/components/sections/Discount/Discount.vue';
 </script>
 
 <template>
-  <div>
+  <div class="page">
     <main-banner />
     <statistics />
     <premium />
@@ -21,3 +21,9 @@ import Discount from '~/components/sections/Discount/Discount.vue';
     <discount />
   </div>
 </template>
+
+<style lang="scss">
+.page {
+  background: $light;
+}
+</style>

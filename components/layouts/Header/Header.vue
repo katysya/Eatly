@@ -52,6 +52,8 @@ const clickActiveItemMenu = (id) => {
 
 <style lang="scss" scoped>
 .header {
+  background: $light;
+
   &__content {
     display: flex;
     flex-direction: row;
