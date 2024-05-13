@@ -5,7 +5,7 @@ import CustomerSayCard from '~/components/ui/cards/CustomerSayCard.vue';
 <template>
   <Swiper
     :modules="[SwiperAutoplay, SwiperPagination]"
-    :slides-per-view="2.5"
+    :slides-per-view="2"
     :space-between="47"
     :loop="true"
     :autoplay="{
@@ -21,21 +21,36 @@ import CustomerSayCard from '~/components/ui/cards/CustomerSayCard.vue';
   </Swiper>
 </template>
 
-<style lnag="scss">
+<style lang="scss">
 .main-swiper {
   min-height: 326px;
 
   .swiper-slide-active {
     .customer {
-      max-height: 300px;
+      max-height: 200px;
       margin-bottom: 30px;
     }
   }
 
-  .swiper-pagination-bullet {
-    width: 110px;
+  .swiper-pagination {
+    right: 0;
+    width: 567px;
+    margin: 0 120px 0 auto;
+    background: $seventh;
     border-radius: 50px;
-    margin: 0;
+    display: flex;
+
+    .swiper-pagination-bullet {
+      background: transparent;
+      flex-grow: 1;
+      border-radius: 50px;
+      margin: 0;
+      transition: background 0.8s;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $primary;
+    }
   }
 }
 </style>

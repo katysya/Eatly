@@ -22,7 +22,7 @@
   max-height: 0;
   margin-bottom: 0;
   overflow: hidden;
-  transition: max-height 1s;
+  transition: max-height 0.6s;
 
   &__info {
     display: flex;
