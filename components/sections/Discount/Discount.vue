@@ -32,12 +32,14 @@ import MainButton from '~/components/ui/buttons/MainButton.vue';
 
 <style lang="scss" scoped>
 .discount {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
+  background: $light;
 
   &__content {
     background-image: url('~/assets/images/Discount/discount.webp');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    border-radius: 30px;
     padding: 40px 66px;
     display: flex;
     flex-direction: column;

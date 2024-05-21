@@ -10,7 +10,7 @@ defineProps({
 
 <template>
   <NuxtLink
-    :to="{ href }"
+    :to="href"
     class="item"
     :class="{ active: active, item__footer: footer }"
     >{{ title }}

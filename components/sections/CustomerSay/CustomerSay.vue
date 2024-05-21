@@ -2,6 +2,8 @@
 import BaseSection from '../BaseSection/BaseSection.vue';
 import SubtitleMini from '~/components/ui/SubtitleMini.vue';
 import MainSlider from '~/components/ui/slider/MainSlider/MainSlider.vue';
+
+import { reviews } from './lib';
 </script>
 
 <template>
@@ -10,7 +12,7 @@ import MainSlider from '~/components/ui/slider/MainSlider/MainSlider.vue';
       <div class="customersay__content">
         <subtitle-mini title="Customer" word="Say" />
         <div class="customersay__block">
-          <MainSlider />
+          <MainSlider :items="reviews" />
         </div>
       </div>
     </base-section>
@@ -22,7 +24,7 @@ import MainSlider from '~/components/ui/slider/MainSlider/MainSlider.vue';
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
     margin-left: 103px;
   }
 }

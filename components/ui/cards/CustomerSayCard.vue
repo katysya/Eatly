@@ -1,16 +1,16 @@
 <script setup>
 import Customer from '~/components/ui/cards/elementsCard/Customer.vue';
+
+defineProps({
+  element: Object,
+});
 </script>
 
 <template>
   <div class="customer-say-card">
     <Customer />
     <div class="customer-say-card__info">
-      <div class="customer-say-card__text">
-        “ Online invoice payment helps companies save time, are faster
-        and save maximum effort for the clients and save maximum
-        effort. Online invoice payment helps companies save time ”
-      </div>
+      <div class="customer-say-card__text">{{ element.text }}</div>
       <div class="customer-say-card__rating">
         <img
           src="~/assets/images/Customer/stars.svg"
@@ -28,8 +28,10 @@ import Customer from '~/components/ui/cards/elementsCard/Customer.vue';
   flex-direction: column;
   border-radius: 20px;
   padding: 38px 43px;
+  margin: 20px 0;
   background: $white;
   color: $secondary;
+  box-shadow: $shadowThird;
 
   &__info {
     display: flex;

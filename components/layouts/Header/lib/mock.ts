@@ -3,13 +3,13 @@ export const menu = reactive([
     id: 0,
     title: 'Menu',
     active: false,
-    href: '/',
+    href: '/menu',
   },
   {
     id: 1,
     title: 'Blog',
     active: false,
-    href: '/',
+    href: '/blog',
   },
   {
     id: 2,

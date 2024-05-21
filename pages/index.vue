@@ -21,9 +21,3 @@ import Discount from '~/components/sections/Discount/Discount.vue';
     <discount />
   </div>
 </template>
-
-<style lang="scss">
-.page {
-  background: $light;
-}
-</style>

@@ -1,5 +1,9 @@
 <script setup>
 import CustomerSayCard from '~/components/ui/cards/CustomerSayCard.vue';
+
+defineProps({
+  items: [Object],
+});
 </script>
 
 <template>
@@ -15,15 +19,15 @@ import CustomerSayCard from '~/components/ui/cards/CustomerSayCard.vue';
     :pagination="{ clickable: true }"
     class="main-swiper"
   >
-    <SwiperSlide v-for="slide in 5" :key="slide">
-      <CustomerSayCard />
+    <SwiperSlide v-for="item in items" :key="item.id">
+      <CustomerSayCard :element="item" />
     </SwiperSlide>
   </Swiper>
 </template>
 
 <style lang="scss">
 .main-swiper {
-  min-height: 326px;
+  min-height: 350px;
 
   .swiper-slide-active {
     .customer {
@@ -35,7 +39,7 @@ import CustomerSayCard from '~/components/ui/cards/CustomerSayCard.vue';
   .swiper-pagination {
     right: 0;
     width: 567px;
-    margin: 0 120px 0 auto;
+    margin: 0 90px 0 auto;
     background: $seventh;
     border-radius: 50px;
     display: flex;
