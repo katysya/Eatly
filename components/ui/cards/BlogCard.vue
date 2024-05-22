@@ -29,7 +29,7 @@ defineProps({
   gap: 15px;
   padding: 25px 20px 30px;
   border-radius: 16px;
-  box-shadow: $shadowThird;
+  box-shadow: $shadowFourth;
 
   &__image {
     min-height: 272px;

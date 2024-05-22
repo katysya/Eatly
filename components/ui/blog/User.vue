@@ -5,28 +5,30 @@ defineProps({
   img: String,
   title: String,
   banner: String,
+  date: String,
 });
 </script>
 
 <template>
-  <div class="blog__account">
-    <div class="blog__account-image">
+  <div class="blog__user">
+    <div class="blog__user-image">
       <img
         src="~/assets/images/Blog/user1.webp"
-        class="blog__account-photo image"
+        class="blog__user-photo image"
         alt=""
       />
     </div>
-    <div class="blog__account-info">
+    <div class="blog__user-info">
       <div class="blog__write">Written By</div>
       <div class="blog__nickname">Perperzon</div>
     </div>
+    <div class="blog__user-date">15 DEC, 2022</div>
   </div>
 </template>
 
 <style lang="scss">
 .blog {
-  &__account {
+  &__user {
     display: flex;
     gap: 15px;
     align-items: center;
@@ -38,6 +40,14 @@ defineProps({
 
     &-photo {
       border-radius: 50%;
+    }
+
+    &-info {
+      flex-grow: 1;
+    }
+
+    &-date {
+      color: $ninth;
     }
   }
 
