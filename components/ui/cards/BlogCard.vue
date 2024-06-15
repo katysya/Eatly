@@ -2,24 +2,29 @@
 import User from '~/components/ui/blog/User.vue';
 
 defineProps({
-  user: [Object],
+  item: [Object],
 });
 </script>
 
 <template>
-  <div class="blog-card">
+  <a class="blog-card" href="/">
     <div class="blog-card__image">
       <img
-        :src="user.bannerMini"
+        :src="item.bannerMini"
         class="blog-card__photo image"
         alt=""
       />
     </div>
-    <div class="blog-card__title">{{ user.title }}</div>
+    <div class="blog-card__title">{{ item.title }}</div>
     <div class="blog-card__user">
-      <user />
+      <user
+        :id="item.id"
+        :nickname="item.user.nickname"
+        :date="item.user.date"
+        :img="item.user.avatar"
+      />
     </div>
-  </div>
+  </a>
 </template>
 
 <style lang="scss">
@@ -29,10 +34,10 @@ defineProps({
   gap: 15px;
   padding: 25px 20px 30px;
   border-radius: 16px;
-  box-shadow: $shadowFourth;
+  box-shadow: $shadow-400;
 
   &__image {
-    min-height: 272px;
+    height: 272px;
   }
 
   &__photo {

@@ -102,7 +102,7 @@ const notification = {
 
   &__users {
     position: relative;
-    color: $fifth;
+    color: $gray-400;
     font-size: calc(10px + 5 * $size);
     font-style: normal;
     font-weight: 600;
@@ -118,7 +118,7 @@ const notification = {
       left: 0;
       width: 54px;
       height: 1px;
-      background: $fifth;
+      background: $gray-400;
     }
   }
 
@@ -128,7 +128,7 @@ const notification = {
   }
 
   &__description {
-    color: $eighth;
+    color: $gray-450;
     font-family: 'Inter', sans-serif;
     font-size: calc(11px + 7 * $size);
     font-weight: 400;
@@ -137,7 +137,7 @@ const notification = {
     margin-bottom: 53px;
 
     &--purple {
-      color: $primary;
+      color: $violet-800;
       opacity: 0.7;
     }
   }
@@ -164,7 +164,7 @@ const notification = {
   }
 
   &__review {
-    color: $eighth;
+    color: $gray-450;
     font-size: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -180,14 +180,14 @@ const notification = {
 
   &__chart {
     position: absolute;
-    background-color: $white;
+    background-color: $white-900;
     bottom: 100px;
     left: 50px;
     z-index: 5;
     border-radius: 15px;
     padding: 10px 0;
-    border: 0.2px solid $whiteSecondary;
-    box-shadow: $shadowSecondary;
+    border: 0.2px solid $white-300;
+    box-shadow: $shadow-200;
 
     &--wrapper {
       position: relative;

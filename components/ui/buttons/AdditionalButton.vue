@@ -15,7 +15,7 @@ defineProps({
 .button {
   position: relative;
   padding: 18px 28px;
-  color: $primary;
+  color: $violet-800;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -26,13 +26,13 @@ defineProps({
   border-radius: 12px;
   cursor: pointer;
   text-decoration: none;
-  border: 2px solid $primary;
+  border: 2px solid $violet-800;
 
   &::before {
     content: '';
     position: absolute;
     z-index: -1;
-    background-color: $primary;
+    background-color: $violet-800;
     height: 150px;
     width: 200px;
     border-radius: 50%;
@@ -42,7 +42,7 @@ defineProps({
   }
 
   &:hover {
-    color: $white;
+    color: $white-900;
 
     &::before {
       top: -30px;

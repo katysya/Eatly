@@ -20,7 +20,7 @@ defineProps({
 <style lang="scss" scoped>
 .item {
   font-family: 'Inter', sans-serif;
-  color: $secondary;
+  color: $gray-600;
   font-size: calc(14px + 4 * $size);
   font-weight: 500;
   line-height: 150%;
@@ -30,15 +30,15 @@ defineProps({
   transition: color 0.3s;
 
   &:hover {
-    color: $primary;
+    color: $violet-800;
   }
 
   &.active {
-    color: $primary;
+    color: $violet-800;
   }
 
   &__footer {
-    color: $fifth;
+    color: $gray-400;
   }
 }
 </style>

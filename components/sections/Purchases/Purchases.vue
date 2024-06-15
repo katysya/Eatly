@@ -98,12 +98,12 @@ function shuffle() {
 }
 
 .p-highlight {
-  color: $primary;
-  background: $primaryLight;
+  color: $violet-800;
+  background: $violet-100;
 }
 
 .p-dropdown:not(.p-disabled).p-focus {
-  outline: 1px solid $primary;
+  outline: 1px solid $violet-800;
 }
 
 .purchases {
@@ -143,9 +143,9 @@ function shuffle() {
   &__table {
     display: flex;
     flex-direction: column;
-    border: 1px solid $whiteSecondary;
+    border: 1px solid $white-300;
     border-radius: 25px;
-    background-color: $white;
+    background-color: $white-900;
     padding: 45px 40px;
     max-width: 534px;
     width: 100%;

@@ -15,7 +15,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .subtitle {
-  color: $tenth;
+  color: $gray-700;
   font-size: 45px;
   font-weight: 600;
   font-size: calc(30px + 15 * $size);
@@ -26,7 +26,7 @@ defineProps({
   }
 
   &__word {
-    color: $primary;
+    color: $violet-800;
   }
 }
 </style>

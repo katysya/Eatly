@@ -29,9 +29,9 @@ defineProps({
   border-radius: 20px;
   padding: 38px 43px;
   margin: 20px 0;
-  background: $white;
-  color: $secondary;
-  box-shadow: $shadowThird;
+  background: $white-900;
+  color: $gray-600;
+  box-shadow: $shadow-300;
 
   &__info {
     display: flex;

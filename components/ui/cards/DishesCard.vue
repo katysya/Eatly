@@ -33,9 +33,9 @@ defineProps({
 <style lang="scss">
 .card-product {
   border-radius: 34px;
-  border: 1px solid $eleventh;
-  background: $white;
-  box-shadow: $shadowPrimary;
+  border: 1px solid $white-200;
+  background: $white-900;
+  box-shadow: $shadow-100;
   padding: 31px 24px 30px 15px;
   height: 100%;
 

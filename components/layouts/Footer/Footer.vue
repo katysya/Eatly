@@ -51,7 +51,7 @@ import { menu, socialNetworks } from './lib';
 
 <style lang="scss" scoped>
 .footer {
-  background-color: $fourth;
+  background-color: $white-400;
   padding-top: 96px;
   padding-bottom: 81px;
 
@@ -61,7 +61,7 @@ import { menu, socialNetworks } from './lib';
     align-items: center;
     justify-content: space-between;
     padding-bottom: 29px;
-    border-bottom: 1px solid $third;
+    border-bottom: 1px solid $gray-100;
   }
 
   &__bottom {
@@ -72,7 +72,7 @@ import { menu, socialNetworks } from './lib';
   }
 
   &__copy {
-    color: $fifth;
+    color: $gray-400;
     font-family: 'Inter', sans-serif;
     font-size: calc(13px + 4 * $size);
     font-weight: 500;

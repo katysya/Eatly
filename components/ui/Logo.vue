@@ -25,7 +25,7 @@
   }
 
   &__text {
-    color: $primary;
+    color: $violet-800;
     font-size: calc(18px + 3 * $size);
     font-weight: 600;
     line-height: 130%;
@@ -34,7 +34,7 @@
 
   &:hover {
     .logo__text {
-      color: $secondary;
+      color: $gray-600;
     }
   }
 }

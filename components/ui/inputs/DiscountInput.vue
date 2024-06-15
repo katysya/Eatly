@@ -14,16 +14,16 @@
   line-height: calc(16px + 8 * $size);
   font-weight: 400;
   border-radius: 15px;
-  color: $fifth;
+  color: $gray-400;
   opacity: 0.7;
   letter-spacing: 0.03em;
   text-align: left;
-  background-color: $white;
-  border: 1px solid $primaryLight;
+  background-color: $white-900;
+  border: 1px solid $violet-100;
   width: 100%;
 
   &:focus {
-    border: 1px solid $white;
+    border: 1px solid $white-900;
   }
 }
 </style>

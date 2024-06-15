@@ -40,7 +40,7 @@ defineProps({
     right: 0;
     width: 567px;
     margin: 0 90px 0 auto;
-    background: $seventh;
+    background: $violet-200;
     border-radius: 50px;
     display: flex;
 
@@ -53,7 +53,7 @@ defineProps({
     }
 
     .swiper-pagination-bullet-active {
-      background: $primary;
+      background: $violet-800;
     }
   }
 }

@@ -1,5 +1,5 @@
 <script setup>
-import BookMarks from '~/components/ui/BookMarks.vue';
+import BookMarks from '~/components/ui/Bookmarks.vue';
 
 defineProps({
   element: Object,
@@ -48,7 +48,7 @@ defineProps({
 .card {
   border-radius: 30px;
   border: 1.251px solid #f4f4f6;
-  background: $white;
+  background: $white-900;
   box-shadow: 66px 71px 35px 0px rgba(229, 229, 229, 0.7);
 
   &__img {
@@ -79,26 +79,26 @@ defineProps({
   &__category {
     border-radius: 5px;
     width: fit-content;
-    background: $light;
+    background: $white-100;
     padding: 3px 8px;
-    color: $dark;
+    color: $black-400;
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
 
     &--1 {
-      color: $cardTextFirst;
-      background: $cardFirst;
+      color: $yellow-800;
+      background: $yellow-100;
     }
 
     &--2 {
-      color: $cardTextSecond;
-      background: $cardSecond;
+      color: $red-900;
+      background: $red-100;
     }
   }
 
   &__title {
-    color: $tenth;
+    color: $gray-700;
     font-size: 26px;
     font-weight: 600;
     line-height: 162%;
@@ -113,7 +113,7 @@ defineProps({
   }
 
   &__time {
-    color: $cardTime;
+    color: $gray-350;
     font-size: inherit;
     font-weight: 400;
     line-height: inherit;
@@ -123,7 +123,7 @@ defineProps({
     display: flex;
     font-size: inherit;
     gap: 7px;
-    color: $cardTime;
+    color: $gray-350;
     font-weight: 400;
     line-height: inherit;
   }

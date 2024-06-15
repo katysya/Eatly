@@ -12,7 +12,7 @@ defineProps({
 <style lang="scss" scoped>
 .button {
   font-family: 'Inter', sans-serif;
-  color: $secondary;
+  color: $gray-600;
   font-size: calc(12px + 6 * $size);
   font-weight: 700;
   text-decoration: none;
@@ -23,7 +23,7 @@ defineProps({
   transition: color 0.3s;
 
   &:hover {
-    color: $primary;
+    color: $violet-800;
   }
 }
 </style>

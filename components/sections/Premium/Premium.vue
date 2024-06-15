@@ -97,7 +97,7 @@ import MainButton from '../../ui/buttons/MainButton.vue';
   }
 
   &__item {
-    color: $eighth;
+    color: $gray-450;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;

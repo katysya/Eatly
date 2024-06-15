@@ -32,8 +32,8 @@ import MainButton from '~/components/ui/buttons/MainButton.vue';
 
 <style lang="scss" scoped>
 .discount {
-  padding-bottom: 200px;
-  background: $light;
+  padding-bottom: 140px;
+  background: $white-100;
 
   &__content {
     background-image: url('~/assets/images/Discount/discount.webp');
@@ -54,7 +54,7 @@ import MainButton from '~/components/ui/buttons/MainButton.vue';
     justify-content: flex-start;
     letter-spacing: 0em;
     text-align: center;
-    color: $white;
+    color: $white-900;
   }
 
   &__form {

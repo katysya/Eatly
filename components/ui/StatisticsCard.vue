@@ -23,7 +23,7 @@ defineProps({
   gap: 7px;
 
   &__title {
-    color: $white;
+    color: $white-900;
     text-align: center;
     font-size: 43px;
     font-weight: 700;
@@ -31,7 +31,7 @@ defineProps({
   }
 
   &__description {
-    color: $seventh;
+    color: $violet-200;
     text-align: center;
     font-family: 'Inter', sans-serif;
     white-space: pre-wrap;

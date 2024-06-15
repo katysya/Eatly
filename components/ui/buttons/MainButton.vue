@@ -23,7 +23,7 @@ defineProps({
 .button {
   border-radius: 12px;
   position: relative;
-  background-color: $primary;
+  background-color: $violet-800;
   text-decoration: none;
   padding: 12px 19px;
   display: flex;
@@ -56,7 +56,7 @@ defineProps({
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    color: $light;
+    color: $white-100;
     transition: all 0.3s;
   }
 

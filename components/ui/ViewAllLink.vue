@@ -17,7 +17,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .link {
-  color: $linkLight;
+  color: $gray-250;
   width: fit-content;
   display: flex;
   gap: 20px;
@@ -40,7 +40,7 @@ defineProps({
   }
 
   &:hover {
-    color: $eighth;
+    color: $gray-450;
 
     .link__icon {
       right: -40%;

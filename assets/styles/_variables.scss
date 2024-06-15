@@ -1,39 +1,49 @@
 /*Colors*/
 
-$white: #ffffff;
-$whiteSecondary: #edf2f7;
-$light: #f9f9f9;
-$dark: #18181b;
-$primary: #6c5fbc;
-$primaryLight: #dbd9ee;
-$secondary: #606060;
-$third: #cbcbcb;
-$fourth: #eaeaea;
-$fifth: #999999;
-$seventh: #c5bfed;
-$eighth: #676767;
-$ninth: #cbcbcb;
-$tenth: #323142;
-$eleventh: #f4f4f6;
-$twelfth: #a0aec0;
-$thirteenth: #1a202c;
-$cardFirst: #f7edd0;
-$cardTextFirst: #daa31a;
-$cardSecond: #f7c5ba;
-$cardTextSecond: #fb471d;
-$cardThird: #c4fedb;
-$cardTextThird: #309d5b;
-$cardTime: #8e97a6;
-$linkLight: #acadb9;
-$heartRed: #f1534e;
-$titleText: #201f1f;
-$shadowChart: #1a202c26;
+$white-100: #f9f9f9;
+$white-200: #f4f4f6;
+$white-300: #edf2f7;
+$white-400: #eaeaea;
+$white-900: #ffffff;
+
+$black-100: #1a202c26;
+$black-200: #1a202c;
+$black-300: #201f1f;
+$black-400: #18181b;
+$black-900: #000000;
+
+$violet-100: #dbd9ee;
+$violet-200: #c5bfed;
+$violet-800: #6c5fbc;
+
+$green-100: #c4fedb;
+$green-400: #309d5b;
+
+$gray-100: #cbcbcb;
+$gray-150: #cbcbcb;
+$gray-200: #a0aec0;
+$gray-250: #acadb9;
+$gray-300: #e4e1e1b3;
+$gray-350: #8e97a6;
+$gray-400: #999999;
+$gray-450: #676767;
+$gray-500: #e5e5e566;
+$gray-550: #e5e5e54d;
+$gray-700: #323142;
+$gray-600: #606060;
+
+$red-100: #f7c5ba;
+$red-800: #f1534e;
+$red-900: #fb471d;
+
+$yellow-100: #f7edd0;
+$yellow-800: #daa31a;
 
 /*Shadow*/
-$shadowPrimary: 7px 82px 41px 0px rgba(229, 229, 229, 0.7);
-$shadowSecondary: 10px 13px 26px 0px $shadowChart;
-$shadowThird: 18px 3px 7px 12px rgba(229, 229, 229, 0.4);
-$shadowFourth: 4px 0px 12px 5px rgba(229, 229, 229, 0.3);
+$shadow-100: 7px 82px 41px 0px $gray-300;
+$shadow-200: 10px 13px 26px 0px $black-100;
+$shadow-300: 18px 3px 7px 12px $gray-500;
+$shadow-400: 4px 0px 12px 5px $gray-550;
 
 /*Variables*/
 $size: calc(100vw - 375px) / 1545;

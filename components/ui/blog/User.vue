@@ -12,17 +12,13 @@ defineProps({
 <template>
   <div class="blog__user">
     <div class="blog__user-image">
-      <img
-        src="~/assets/images/Blog/user1.webp"
-        class="blog__user-photo image"
-        alt=""
-      />
+      <img :src="img" class="blog__user-photo image" alt="" />
     </div>
     <div class="blog__user-info">
       <div class="blog__write">Written By</div>
-      <div class="blog__nickname">Perperzon</div>
+      <div class="blog__nickname">{{ nickname }}</div>
     </div>
-    <div class="blog__user-date">15 DEC, 2022</div>
+    <div class="blog__user-date">{{ date }}</div>
   </div>
 </template>
 
@@ -47,13 +43,13 @@ defineProps({
     }
 
     &-date {
-      color: $ninth;
+      color: $gray-150;
     }
   }
 
   &__write {
     font-size: calc(10px + 5 * $size);
-    color: $fifth;
+    color: $gray-400;
     font-weight: 400;
     text-align: left;
   }

@@ -43,7 +43,7 @@
 
   &__time {
     font-size: calc(10px + 7 * $size);
-    color: $secondary;
+    color: $gray-600;
   }
 }
 </style>

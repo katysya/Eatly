@@ -40,7 +40,7 @@ import { data } from './lib';
 
 <style lang="scss" scoped>
 .statistics {
-  background-color: $primary;
+  background-color: $violet-800;
   padding: 40px 0;
   position: relative;
 
@@ -73,7 +73,7 @@ import { data } from './lib';
 
   &__element {
     width: 1px;
-    background: $third;
+    background: $gray-100;
     opacity: 0.15;
 
     &:last-child {

@@ -13,7 +13,7 @@ defineProps({
 
 <style lang="scss" scoped>
 .title {
-  color: $titleText;
+  color: $black-300;
   font-size: calc(46px + 29 * $size);
   font-style: normal;
   font-weight: 600;
@@ -21,7 +21,7 @@ defineProps({
   letter-spacing: -3px;
 
   span {
-    color: $primary;
+    color: $violet-800;
   }
 }
 </style>

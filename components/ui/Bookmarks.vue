@@ -19,7 +19,7 @@ import BookMarksIcon from './icons/BookMarksIcon.vue';
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $primaryLight;
+  background-color: $violet-100;
   border-radius: 50%;
   user-select: none;
 
@@ -31,7 +31,7 @@ import BookMarksIcon from './icons/BookMarksIcon.vue';
     width: 0;
 
     &:checked ~ svg {
-      fill: $primary;
+      fill: $violet-800;
     }
   }
 

@@ -52,7 +52,7 @@ const clickActiveItemMenu = (id) => {
 
 <style lang="scss" scoped>
 .header {
-  background: $light;
+  background: $white-100;
 
   &__content {
     display: flex;
@@ -61,7 +61,7 @@ const clickActiveItemMenu = (id) => {
     justify-content: space-between;
     padding-bottom: 17px;
     padding-top: 34px;
-    border-bottom: 1px solid $third;
+    border-bottom: 1px solid $gray-100;
   }
 
   &__menu {

@@ -17,14 +17,14 @@ defineProps({
 
 <style lang="scss">
 .title {
-  color: $dark;
+  color: $black-400;
   font-size: calc(30px + 20 * $size);
   font-weight: 700;
   line-height: 114%;
   text-transform: capitalize;
 
   &__word {
-    color: $primary;
+    color: $violet-800;
   }
 
   &__name {

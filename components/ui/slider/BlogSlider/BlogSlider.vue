@@ -24,7 +24,7 @@ const navigateParams = {
       class="blog__slider"
     >
       <SwiperSlide v-for="item in items" :key="item.id">
-        <blog-card :user="item" />
+        <blog-card :item="item" />
       </SwiperSlide>
     </Swiper>
     <div class="blog__navigation">

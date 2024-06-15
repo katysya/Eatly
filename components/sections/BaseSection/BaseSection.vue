@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 .section {
-  border-top: 1px solid $third;
+  border-top: 1px solid $gray-100;
   padding-top: 100px;
   margin-bottom: 120px;
 }

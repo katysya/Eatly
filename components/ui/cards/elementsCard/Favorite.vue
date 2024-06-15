@@ -29,11 +29,11 @@ import HeartIcon from '../../icons/HeartIcon.vue';
     width: 0;
 
     &:checked ~ .heart__checkmark {
-      color: $heartRed;
+      color: $red-800;
       animation: like_effect 400ms ease;
 
       path {
-        stroke: $heartRed;
+        stroke: $red-800;
       }
     }
   }

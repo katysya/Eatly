@@ -1,1 +1,1 @@
-export { users } from './mock.ts';
+export { users } from './mock';

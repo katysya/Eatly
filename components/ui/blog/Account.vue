@@ -33,7 +33,7 @@
 
   &__write {
     font-size: calc(10px + 5 * $size);
-    color: $fifth;
+    color: $gray-400;
     font-weight: 400;
     text-align: left;
   }

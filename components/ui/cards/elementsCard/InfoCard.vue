@@ -42,31 +42,31 @@ defineProps({
   &__category {
     border-radius: 5px;
     width: fit-content;
-    background: $light;
+    background: $white-100;
     padding: 3px 8px;
-    color: $dark;
+    color: $black-400;
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
 
     &--1 {
-      color: $cardTextFirst;
-      background: $cardFirst;
+      color: $yellow-800;
+      background: $yellow-100;
     }
 
     &--2 {
-      color: $cardTextSecond;
-      background: $cardSecond;
+      color: $red-900;
+      background: $red-100;
     }
 
     &--3 {
-      color: $cardTextThird;
-      background: $cardThird;
+      color: $green-400;
+      background: $green-100;
     }
   }
 
   &__title {
-    color: $tenth;
+    color: $gray-700;
     font-size: calc(15px + 8 * $size);
     font-weight: 600;
   }
@@ -80,7 +80,7 @@ defineProps({
   }
 
   &__time {
-    color: $cardTime;
+    color: $gray-350;
     font-size: inherit;
     font-weight: 400;
     line-height: inherit;
@@ -90,7 +90,7 @@ defineProps({
     display: flex;
     font-size: inherit;
     gap: 7px;
-    color: $cardTime;
+    color: $gray-350;
     font-weight: 400;
     line-height: inherit;
   }

@@ -33,7 +33,7 @@ const value = ref(50);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid $primaryLight;
+  border: 1px solid $violet-100;
   border-radius: 20px;
   padding: 25px;
 
@@ -57,7 +57,7 @@ const value = ref(50);
   }
 
   &__name {
-    color: $thirteenth;
+    color: $black-200;
     font-size: calc(12px + 7 * $size);
     line-height: calc(16px + 12 * $size);
     font-weight: 800;
@@ -65,7 +65,7 @@ const value = ref(50);
   }
 
   &__percent {
-    color: $twelfth;
+    color: $gray-200;
     font-size: calc(10px + 6 * $size);
     line-height: calc(14px + 10 * $size);
     font-weight: 500;
@@ -91,7 +91,7 @@ const value = ref(50);
   }
 
   .p-progressbar-value {
-    background: $primary;
+    background: $violet-800;
     border-radius: 78px;
   }
 }

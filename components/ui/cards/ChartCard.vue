@@ -174,7 +174,7 @@ const changeChart = (id) => {
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: $primary;
+    background-color: $violet-800;
     opacity: 0.1;
     top: 30%;
 
@@ -184,7 +184,7 @@ const changeChart = (id) => {
       position: absolute;
       width: 100%;
       height: 1px;
-      background-color: $primary;
+      background-color: $violet-800;
     }
 
     &::after {

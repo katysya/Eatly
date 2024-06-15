@@ -36,7 +36,7 @@ import { card } from './lib';
 
   &__content {
     display: flex;
-    border-top: 1px solid $ninth;
+    border-top: 1px solid $gray-150;
     flex-direction: column;
     gap: calc(59px + 26 * $size);
   }

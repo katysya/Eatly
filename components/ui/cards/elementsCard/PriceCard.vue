@@ -45,7 +45,7 @@ const deleteProductToCart = () => {
   align-items: center;
 
   &__cost {
-    color: $tenth;
+    color: $gray-700;
     font-size: 26px;
     font-weight: 700;
   }
@@ -69,7 +69,7 @@ const deleteProductToCart = () => {
   }
 
   &__count {
-    color: $tenth;
+    color: $gray-700;
     position: absolute;
     right: 0;
     font-size: 20px;
@@ -87,10 +87,10 @@ const deleteProductToCart = () => {
     border-radius: 10px;
     width: 35px;
     height: 35px;
-    background-color: $tenth;
+    background-color: $gray-700;
     font-size: 24px;
     font-weight: 400;
-    color: $white;
+    color: $white-900;
     transition: all 0.3s;
 
     &:disabled {

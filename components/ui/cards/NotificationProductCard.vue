@@ -37,7 +37,7 @@ defineProps({
 <style lang="scss" scoped>
 .card {
   border-radius: 16px;
-  background-color: $white;
+  background-color: $white-900;
   padding: 5px 16px;
   display: flex;
   gap: 18px;
@@ -62,7 +62,7 @@ defineProps({
   }
 
   &__title {
-    color: $tenth;
+    color: $gray-700;
     font-size: calc(8px + 8 * $size);
     font-weight: 600;
     line-height: 140%;
@@ -70,17 +70,17 @@ defineProps({
   }
 
   &__status {
-    color: $tenth;
+    color: $gray-700;
     font-size: calc(6px + 4 * $size);
     font-weight: 500;
     line-height: 140%;
 
     &-cancel {
-      color: $cardTextSecond;
+      color: $red-900;
     }
 
     &-delivered {
-      color: $cardTextThird;
+      color: $green-400;
     }
   }
 
@@ -95,7 +95,7 @@ defineProps({
     font-size: calc(6px + 5 * $size);
     font-weight: 500;
     line-height: 15px;
-    color: $linkLight;
+    color: $gray-250;
   }
 }
 </style>
